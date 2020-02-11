@@ -4,16 +4,16 @@
 ![Node.js CI](https://github.com/DrannikovVladimir/frontend-project-level1/workflows/Node.js%20CI/badge.svg)   
 
 ## Brain-even   
-[![asciicast](https://asciinema.org/a/299921.svg)](https://asciinema.org/a/299921)   
+[![asciicast](https://asciinema.org/a/v932G8mFunfEYd7QBgoaEXZ0M.svg)](https://asciinema.org/a/v932G8mFunfEYd7QBgoaEXZ0M)   
 
 ## Brain-calc   
-[![asciicast](https://asciinema.org/a/ju2qwR2SPX9CJaKg2NYz6wACd.svg)](https://asciinema.org/a/ju2qwR2SPX9CJaKg2NYz6wACd)   
+[![asciicast](https://asciinema.org/a/mfI6lHRcEcriB2w6pUxSTBNxo.svg)](https://asciinema.org/a/mfI6lHRcEcriB2w6pUxSTBNxo)   
 
 ## Brain-gcd   
-[![asciicast](https://asciinema.org/a/iwP9gjHZOqMgSlataMydlK4pZ.svg)](https://asciinema.org/a/iwP9gjHZOqMgSlataMydlK4pZ)   
+[![asciicast](https://asciinema.org/a/fBDRQwfdvxnLV3ZKQplwSJKRv.svg)](https://asciinema.org/a/fBDRQwfdvxnLV3ZKQplwSJKRv)   
 
 ## Brain-progression   
-[![asciicast](https://asciinema.org/a/mGKsfdobu8ND26BOkztHXNJRK.svg)](https://asciinema.org/a/mGKsfdobu8ND26BOkztHXNJRK)   
+[![asciicast](https://asciinema.org/a/Nr2ngWc2uWcZ92gSivwyk2tkX.svg)](https://asciinema.org/a/Nr2ngWc2uWcZ92gSivwyk2tkX)   
 
 ## Brain-prime   
-[![asciicast](https://asciinema.org/a/kZwCowwhgu3xVr74QOub0mgms.svg)](https://asciinema.org/a/kZwCowwhgu3xVr74QOub0mgms)   
+[![asciicast](https://asciinema.org/a/IijgP5L6bX9I4Qf1XNTPyXnlh.svg)](https://asciinema.org/a/IijgP5L6bX9I4Qf1XNTPyXnlh)   
