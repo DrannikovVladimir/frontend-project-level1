@@ -11,7 +11,7 @@ const gameFlow = (gameQuestion, game) => {
     const [strExpression, correctAnswer] = game();
     console.log(`Question: ${strExpression}`);
     const userAnswer = readlineSync.question('You answer: ');
-    if (userAnswer === correctAnswer) {
+    if (userAnswer === correctAnswer.toString()) {
       console.log('Correct!');
       count += 1;
       if (count > 3) {
