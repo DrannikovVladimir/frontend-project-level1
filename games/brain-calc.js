@@ -14,13 +14,13 @@ const countExpression = () => {
   let correctAnswer;
   switch (randomOperator) {
     case '+':
-      correctAnswer = (firstNumber + secondNumber).toString();
+      correctAnswer = firstNumber + secondNumber;
       break;
     case '-':
-      correctAnswer = (firstNumber - secondNumber).toString();
+      correctAnswer = firstNumber - secondNumber;
       break;
     case '*':
-      correctAnswer = (firstNumber * secondNumber).toString();
+      correctAnswer = firstNumber * secondNumber;
       break;
     default:
       correctAnswer = null;
