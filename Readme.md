@@ -16,25 +16,30 @@
 
 ## Brain-even   
 #### Start game:
-`brain-even`   
+`brain-even`      
+
 [![asciicast](https://asciinema.org/a/v932G8mFunfEYd7QBgoaEXZ0M.svg)](https://asciinema.org/a/v932G8mFunfEYd7QBgoaEXZ0M)   
 
 ## Brain-calc   
 #### Start game:
-`brain-calc`   
+`brain-calc`      
+
 [![asciicast](https://asciinema.org/a/mfI6lHRcEcriB2w6pUxSTBNxo.svg)](https://asciinema.org/a/mfI6lHRcEcriB2w6pUxSTBNxo)   
 
 ## Brain-gcd   
 #### Start game:
-`brain-gcd`   
+`brain-gcd`      
+
 [![asciicast](https://asciinema.org/a/fBDRQwfdvxnLV3ZKQplwSJKRv.svg)](https://asciinema.org/a/fBDRQwfdvxnLV3ZKQplwSJKRv)   
 
 ## Brain-progression   
 #### Start game:
-`brain-progression`   
+`brain-progression`      
+
 [![asciicast](https://asciinema.org/a/Nr2ngWc2uWcZ92gSivwyk2tkX.svg)](https://asciinema.org/a/Nr2ngWc2uWcZ92gSivwyk2tkX)   
 
 ## Brain-prime   
 #### Start game:
-`brain-prime`   
+`brain-prime`     
+
 [![asciicast](https://asciinema.org/a/IijgP5L6bX9I4Qf1XNTPyXnlh.svg)](https://asciinema.org/a/IijgP5L6bX9I4Qf1XNTPyXnlh)   
