@@ -1,7 +1,7 @@
 import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
-const QUESTION = 'What number is missing in the progression?';
+const GAME_DESCRIPTION = 'What number is missing in the progression?';
 const MAX_NUMBERS_OF_PROGRESSION = 200;
 const MIN_NUMBERS_OF_PROGRESSION = 20;
 const MAX_NUMBER_OF_STEP = 20;
@@ -28,7 +28,7 @@ const getProgression = () => {
 };
 
 const gameProgression = () => {
-  gameFlow(QUESTION, getProgression);
+  gameFlow(GAME_DESCRIPTION, getProgression);
 };
 
 export default gameProgression;

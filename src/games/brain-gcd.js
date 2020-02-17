@@ -3,7 +3,7 @@ import getRandomNumber from '../util/util.js';
 
 const MAX_NUMBER = 100;
 const MIN_NUMBER = 1;
-const QUESTION = 'Find the greatest common divisor of given numbers.';
+const GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = () => {
   const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
@@ -39,7 +39,7 @@ const getGcd = () => {
 };
 
 const gameGcd = () => {
-  gameFlow(QUESTION, getGcd);
+  gameFlow(GAME_DESCRIPTION, getGcd);
 };
 
 export default gameGcd;

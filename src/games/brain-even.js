@@ -3,7 +3,7 @@ import getRandomNumber from '../util/util.js';
 
 const MAX_NUMBER = 1000;
 const MIN_NUMBER = 1;
-const QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".';
+const GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getEven = () => {
   const randomNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
@@ -14,7 +14,7 @@ const getEven = () => {
 };
 
 const gameEven = () => {
-  gameFlow(QUESTION, getEven);
+  gameFlow(GAME_DESCRIPTION, getEven);
 };
 
 export default gameEven;
