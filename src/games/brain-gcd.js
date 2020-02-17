@@ -37,8 +37,7 @@ const getQuestionAndAnswer = () => {
   const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
   const secondNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
   const question = `${firstNumber} ${secondNumber}`;
-
-  const answer = rest;
+  const answer = getGcd(firstNumber, secondNumber);
 
   return [question, answer];
 };
