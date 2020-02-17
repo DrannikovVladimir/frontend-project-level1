@@ -6,31 +6,36 @@ const MAX_NUMBER = 100;
 const MIN_NUMBER = 1;
 const OPERATORS = ['+', '-', '*'];
 
-const countExpression = () => {
-  const randomOperator = OPERATORS[getRandomNumber(0, 2)];
-  const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-  const secondNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-  const question = `${firstNumber} ${randomOperator} ${secondNumber}`;
+const countExpression = (a, b, flag) => {
   let answer;
-  switch (randomOperator) {
+  switch (flag) {
     case '+':
-      answer = firstNumber + secondNumber;
+      answer = a + b;
       break;
     case '-':
-      answer = firstNumber - secondNumber;
+      answer = a - b;
       break;
     case '*':
-      answer = firstNumber * secondNumber;
+      answer = a * b;
       break;
     default:
       return null;
   }
+  return answer;
+};
+
+const getQuestionAndAnswer = () => {
+  const randomOperator = OPERATORS[getRandomNumber(0, 2)];
+  const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
+  const secondNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
+  const question = `${firstNumber} ${randomOperator} ${secondNumber}`;
+  const answer = countExpression(firstNumber, secondNumber, randomOperator);
 
   return [question, answer];
 };
 
 const gameCalc = () => {
-  gameFlow(GAME_DESCRIPTION, countExpression);
+  gameFlow(GAME_DESCRIPTION, getQuestionAndAnswer);
 };
 
 export default gameCalc;
