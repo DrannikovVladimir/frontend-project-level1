@@ -14,10 +14,8 @@ const createProgression = () => {
   const progression = [];
   const firstItem = getRandomNumber(MIN_NUMBERS_OF_PROGRESSION, MAX_NUMBERS_OF_PROGRESSION);
   const step = getRandomNumber(MIN_NUMBER_OF_STEP, MAX_NUMBER_OF_STEP);
-  let count = 0;
   for (let i = 0; i < PROGRESSION_SIZE; i += 1) {
-    progression[i] = firstItem + count;
-    count += step;
+    progression[i] = firstItem + step * i;
   }
 
   return progression;
