@@ -2,29 +2,24 @@ import readlineSync from 'readline-sync';
 
 const MAX_COUNT = 3;
 
-const gameFlow = (gameQuestion, game) => {
+const playGame = (gameQuestion, game) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(`${gameQuestion}`);
-  let count = 1;
-  let isCorrect = true;
-  while (count <= MAX_COUNT && isCorrect) {
-    const [strExpression, correctAnswer] = game();
-    console.log(`Question: ${strExpression}`);
+  for (let i = 0; i < MAX_COUNT; i += 1) {
+    const [question, answer] = game();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('You answer: ');
-    if (userAnswer === correctAnswer.toString()) {
+    if (userAnswer === answer.toString()) {
       console.log('Correct!');
-      count += 1;
-      if (count > MAX_COUNT) {
-        console.log(`Congratulation, ${userName}`);
-      }
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}"`);
       console.log(`Let's try again, ${userName}`);
-      isCorrect = false;
+      break;
     }
   }
+  console.log(`Congratulation, ${userName}`);
 };
 
-export default gameFlow;
+export default playGame;
