@@ -5,16 +5,18 @@ const MAX_NUMBER = 1000;
 const MIN_NUMBER = 1;
 const GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getEven = () => {
+const isEven = (num) => (num % 2 === 0 ? true : false);
+
+const getQuestionAndAnswer = () => {
   const randomNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
   const question = randomNumber;
-  const answer = randomNumber % 2 === 0 ? 'yes' : 'no';
+  const answer = isEven(randomNumber);
 
   return [question.toString(), answer];
 };
 
 const gameEven = () => {
-  gameFlow(GAME_DESCRIPTION, getEven);
+  gameFlow(GAME_DESCRIPTION, getQuestionAndAnswer);
 };
 
 export default gameEven;
