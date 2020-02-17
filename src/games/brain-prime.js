@@ -8,14 +8,14 @@ const COUNT_START = 2;
 
 const isPrime = (num) => {
   if (num < 2) {
-    return false;
+    return true;
   }
   for (let i = COUNT_START; i < num / 2; i += 1) {
     if (num % i === 0) {
-      return true;
+      return false;
     }
   }
-  return false;
+  return true;
 };
 
 const getPrime = () => {
