@@ -2,11 +2,12 @@ import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
 const MAX_NUMBER = 100;
+const MIN_NUMBER = 1;
 const QUESTION = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = () => {
-  const firstNumber = getRandomNumber(MAX_NUMBER);
-  const secondNumber = getRandomNumber(MAX_NUMBER);
+  const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
+  const secondNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
   const expressionStr = `${firstNumber} ${secondNumber}`;
   if (firstNumber === secondNumber) {
     return firstNumber;
