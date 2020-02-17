@@ -21,7 +21,7 @@ const createProgression = () => {
   }
 
   return progression;
-}
+};
 
 const getQuestionAndAnswer = () => {
   const progression = createProgression();
