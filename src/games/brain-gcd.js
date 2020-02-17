@@ -5,21 +5,18 @@ const MAX_NUMBER = 100;
 const MIN_NUMBER = 1;
 const GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
-const getGcd = () => {
-  const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-  const secondNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-  const question = `${firstNumber} ${secondNumber}`;
-  if (firstNumber === secondNumber) {
-    return firstNumber;
+const getGcd = (a, b) => {
+  if (a === b) {
+    return a;
   }
   let maxNumber;
   let minNumber;
-  if (firstNumber > secondNumber) {
-    maxNumber = firstNumber;
-    minNumber = secondNumber;
+  if (a > b) {
+    maxNumber = a;
+    minNumber = b;
   } else {
-    maxNumber = secondNumber;
-    minNumber = firstNumber;
+    maxNumber = b;
+    minNumber = a;
   }
   let rest;
   let flag = true;
@@ -33,13 +30,21 @@ const getGcd = () => {
       minNumber = rest;
     }
   }
+  return rest;
+};
+
+const getQuestionAndAnswer = () => {
+  const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
+  const secondNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
+  const question = `${firstNumber} ${secondNumber}`;
+
   const answer = rest;
 
   return [question, answer];
 };
 
 const gameGcd = () => {
-  gameFlow(GAME_DESCRIPTION, getGcd);
+  gameFlow(GAME_DESCRIPTION, getQuestionAndAnswer);
 };
 
 export default gameGcd;
