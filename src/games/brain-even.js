@@ -1,3 +1,4 @@
+import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
 const MAX_NUMBER = 1000;
@@ -11,4 +12,8 @@ const getEven = () => {
   return [str, isEven];
 };
 
-export { QUESTION, getEven };
+const gameEven = () => {
+  gameFlow(QUESTION, getEven);
+};
+
+export default gameEven;

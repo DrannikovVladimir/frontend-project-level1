@@ -1,3 +1,4 @@
+import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
 const QUESTION = 'What number is missing in the progression?';
@@ -22,4 +23,8 @@ const getProgression = () => {
   return [expressionStr, randomItem];
 };
 
-export { QUESTION, getProgression };
+const gameProgression = () => {
+  gameFlow(QUESTION, getProgression);
+};
+
+export default gameProgression;

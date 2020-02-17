@@ -1,3 +1,4 @@
+import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
 const QUESTION = 'What is the result of the expression?';
@@ -29,4 +30,8 @@ const countExpression = () => {
   return [expressionStr, correctAnswer];
 };
 
-export { QUESTION, countExpression };
+const gameCalc = () => {
+  gameFlow(QUESTION, countExpression);
+};
+
+export default gameCalc;

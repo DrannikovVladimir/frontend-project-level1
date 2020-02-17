@@ -1,3 +1,4 @@
+import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
 const MAX_NUMBER = 100;
@@ -35,4 +36,8 @@ const getGcd = () => {
   return [expressionStr, rest];
 };
 
-export { QUESTION, getGcd };
+const gameGcd = () => {
+  gameFlow(QUESTION, getGcd);
+};
+
+export default gameGcd;

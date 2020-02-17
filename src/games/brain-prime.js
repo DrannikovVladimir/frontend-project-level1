@@ -1,3 +1,4 @@
+import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
 const QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -17,4 +18,8 @@ const getPrime = () => {
   return [randomNumber, isPrime];
 };
 
-export { QUESTION, getPrime };
+const gamePrime = () => {
+  gameFlow(QUESTION, getPrime);
+};
+
+export default gamePrime;
