@@ -7,10 +7,10 @@ const QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getEven = () => {
   const randomNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-  const str = `${randomNumber}`;
-  const isEven = randomNumber % 2 === 0 ? 'yes' : 'no';
+  const question = randomNumber;
+  const answer = randomNumber % 2 === 0 ? 'yes' : 'no';
 
-  return [str, isEven];
+  return [question.toString(), answer];
 };
 
 const gameEven = () => {

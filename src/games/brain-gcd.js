@@ -8,7 +8,7 @@ const QUESTION = 'Find the greatest common divisor of given numbers.';
 const getGcd = () => {
   const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
   const secondNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-  const expressionStr = `${firstNumber} ${secondNumber}`;
+  const question = `${firstNumber} ${secondNumber}`;
   if (firstNumber === secondNumber) {
     return firstNumber;
   }
@@ -33,8 +33,9 @@ const getGcd = () => {
       minNumber = rest;
     }
   }
+  const answer = rest;
 
-  return [expressionStr, rest];
+  return [question, answer];
 };
 
 const gameGcd = () => {

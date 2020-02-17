@@ -10,23 +10,23 @@ const countExpression = () => {
   const randomOperator = OPERATORS[getRandomNumber(0, 2)];
   const firstNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
   const secondNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-  const expressionStr = `${firstNumber} ${randomOperator} ${secondNumber}`;
-  let correctAnswer;
+  const question = `${firstNumber} ${randomOperator} ${secondNumber}`;
+  let answer;
   switch (randomOperator) {
     case '+':
-      correctAnswer = firstNumber + secondNumber;
+      answer = firstNumber + secondNumber;
       break;
     case '-':
-      correctAnswer = firstNumber - secondNumber;
+      answer = firstNumber - secondNumber;
       break;
     case '*':
-      correctAnswer = firstNumber * secondNumber;
+      answer = firstNumber * secondNumber;
       break;
     default:
-      correctAnswer = null;
+      answer = null;
   }
 
-  return [expressionStr, correctAnswer];
+  return [question, answer];
 };
 
 const gameCalc = () => {

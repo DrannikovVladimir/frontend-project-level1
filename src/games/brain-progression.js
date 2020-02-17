@@ -20,11 +20,11 @@ const getProgression = () => {
     count += step;
   }
   const randomIndex = getRandomNumber(MIN_RANDOM_INDEX, MAX_RANDOM_INDEX);
-  const randomItem = progression[randomIndex];
+  const answer = progression[randomIndex];
   progression[randomIndex] = '..';
-  const expressionStr = progression.join(' ');
+  const question = progression.join(' ');
 
-  return [expressionStr, randomItem];
+  return [question, answer];
 };
 
 const gameProgression = () => {
