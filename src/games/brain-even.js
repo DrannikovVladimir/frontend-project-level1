@@ -26,4 +26,4 @@ const gameEven = () => {
   gameFlow(GAME_DESCRIPTION, getQuestionAndAnswer);
 };
 
-export default gameEven;
+export { gameEven, isEven };

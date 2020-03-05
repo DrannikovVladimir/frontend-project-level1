@@ -1,4 +1,3 @@
-import assert from 'assert';
 import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
@@ -19,13 +18,6 @@ const isPrime = (num) => {
   return true;
 };
 
-assert.equal(isPrime(2), true);
-assert.equal(isPrime(3), true);
-assert.equal(isPrime(4), false);
-assert.equal(isPrime(5), true);
-assert.equal(isPrime(7), true);
-assert.equal(isPrime(8), false);
-
 const getPrime = () => {
   const randomNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
   const question = randomNumber;
@@ -38,4 +30,4 @@ const gamePrime = () => {
   gameFlow(GAME_DESCRIPTION, getPrime);
 };
 
-export default gamePrime;
+export { gamePrime, isPrime };

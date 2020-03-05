@@ -51,4 +51,4 @@ const gameGcd = () => {
   gameFlow(GAME_DESCRIPTION, getQuestionAndAnswer);
 };
 
-export default gameGcd;
+export { gameGcd, getGcd };
