@@ -1,3 +1,4 @@
+import assert from 'assert';
 import gameFlow from '../index.js';
 import getRandomNumber from '../util/util.js';
 
@@ -10,13 +11,20 @@ const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
-  for (let i = START_COUNT; i < num / 2; i += 1) {
+  for (let i = START_COUNT; i <= num / 2; i += 1) {
     if (num % i === 0) {
       return false;
     }
   }
   return true;
 };
+
+assert.equal(isPrime(2), true);
+assert.equal(isPrime(3), true);
+assert.equal(isPrime(4), false);
+assert.equal(isPrime(5), true);
+assert.equal(isPrime(7), true);
+assert.equal(isPrime(8), false);
 
 const getPrime = () => {
   const randomNumber = getRandomNumber(MIN_NUMBER, MAX_NUMBER);
